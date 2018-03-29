@@ -23,3 +23,18 @@ var cryptosquare = function (str){
   }
   return result;
 }
+
+
+//user interface logic starts here
+$(document).ready(function(){
+  $("form#userInput").submit(function(event){
+    event.preventDefault();
+    $(".output").hide();
+    var userInput = $("#message").val();
+
+    var output = cryptosquare(userInput);
+    $(".secret").text(output);
+
+    $(".output").show();
+  });
+});
