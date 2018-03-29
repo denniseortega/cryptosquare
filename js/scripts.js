@@ -1,6 +1,6 @@
 var numberOfColumns = function(length){
     var n = 1;
-    while (length > (n * n)){
+    while (length >= (n * n)){
         n ++;
     };
     return n;
@@ -8,7 +8,7 @@ var numberOfColumns = function(length){
 
 
 var cryptosquare = function (str){
-  str = str.replace(/ /g, "").replace(".", "").replace("!", "").replace("?", "").replace("&", "").replace(/,/g, "").toLowerCase();
+  str = str.replace(/ /g, "").replace(/\./g, "").replace(/\!/g, "").replace(/\?/g, "").replace(/\$/g, "").replace(/,/g, "").replace(/\&/g, "").replace(/\%/g, "").toLowerCase();
   var columns = numberOfColumns(str.length);
   var result = "";
   var counter = 0;
