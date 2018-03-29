@@ -1,0 +1,20 @@
+.output {
+  display: none;
+  margin-top: 20px;
+  margin-left: 25%;
+  font-weight: bold;
+}
+.jumbotron {
+  text-align: center;
+  background-color: #edf7f7;
+}
+input#message {
+  width: 50%;
+}
+.container #userInput{
+  margin-left: 25%;
+}
+.secret {
+  font-size: 15pt;
+
+}
